@@ -55,3 +55,9 @@ for (int i = 0; i < ash.PokemonList.Count;)
     Console.WriteLine($"{ash.PokemonList[0].Name} was released!");
     ash.Release(ash.PokemonList[0]);
 }
+
+//while (ash.PokemonList.Count > 0)
+//{
+//    Console.WriteLine($"{ash.PokemonList[0].Name} was released!");
+//    ash.Release(ash.PokemonList[0]);
+//}

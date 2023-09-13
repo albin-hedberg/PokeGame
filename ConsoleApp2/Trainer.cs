@@ -8,6 +8,9 @@ namespace PokeGame
 {
     internal class Trainer
     {
+        // prop
+        //public List<Pokemon> PokemonList { get; set; } = new List<Pokemon>();
+
         List<Pokemon> _pokemonList = new List<Pokemon>();
         public List<Pokemon> PokemonList
         {
@@ -18,6 +21,7 @@ namespace PokeGame
         public void Catch(Pokemon pokemon)
         {
             _pokemonList.Add(pokemon);
+            //PokemonList.Add(pokemon);
         }
 
         public void Release(Pokemon pokemon)
@@ -26,6 +30,10 @@ namespace PokeGame
             {
                 _pokemonList.Remove(pokemon);
             }
+            //if (PokemonList.Contains(pokemon))
+            //{
+            //    PokemonList.Remove(pokemon);  // Remove returnerar true/false
+            //}
         }
 
         // Detta är en statisk metod. Statiska metoder anropas via typen och inte via objekt.
