@@ -1,4 +1,7 @@
 ﻿using PokeGame;
+using PokemonCommon.Characters;
+using PokemonCommon.Enums;
+using PokemonCommon.Pokemons;
 
 //Console.WriteLine("-------------------------");
 Trainer ash = new Trainer();

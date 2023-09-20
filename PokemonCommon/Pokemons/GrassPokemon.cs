@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PokemonCommon.Enums;
 
-namespace PokeGame
+namespace PokemonCommon.Pokemons
 {
-    internal class GrassPokemon : Pokemon
+    public class GrassPokemon : Pokemon
     {
         public GrassPokemon()
         {
@@ -19,7 +15,7 @@ namespace PokeGame
 
         public override void Eat(string food)
         {
-            Console.WriteLine($"{this.Name} did questionable things to: {food}");
+            Console.WriteLine($"{Name} did questionable things to: {food}");
         }
 
         private void Bind()

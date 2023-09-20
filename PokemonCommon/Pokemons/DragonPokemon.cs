@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PokemonCommon.Enums;
 
-namespace PokeGame
+namespace PokemonCommon.Pokemons
 {
-    internal class DragonPokemon : Pokemon
+    public class DragonPokemon : Pokemon
     {
         public DragonPokemon()
         {
@@ -24,7 +19,7 @@ namespace PokeGame
 
         public override void Eat(string food)
         {
-            Console.WriteLine($"{this.Name} flew away from: {food}");
+            Console.WriteLine($"{Name} flew away from: {food}");
         }
 
         private void Fly()

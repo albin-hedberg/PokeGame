@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PokemonCommon.Enums;
 
-namespace PokeGame
+namespace PokemonCommon.Pokemons
 {
-    internal class WaterPokemon : Pokemon
+    public class WaterPokemon : Pokemon
     {
         public WaterPokemon()
         {
@@ -22,7 +18,7 @@ namespace PokeGame
 
         public override void Eat(string food)
         {
-            Console.WriteLine($"{this.Name} drowned: {food}");
+            Console.WriteLine($"{Name} drowned: {food}");
         }
 
         private void Bubble()

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PokemonCommon.Enums;
 
-namespace PokeGame
+namespace PokemonCommon.Pokemons
 {
     // Går inte att instansiera 'abstract'
-    internal abstract class Pokemon
+    public abstract class Pokemon
     {
         // Property för health points 
         // Databehållaren "bakom" en property kallas för fält.
@@ -23,13 +18,13 @@ namespace PokeGame
 
         // Property för Name
         private string _name;
-        public string Name 
-        { 
-            get 
+        public string Name
+        {
+            get
             {
-                return _name; 
+                return _name;
             }
-            set 
+            set
             {
                 _name = value;
             }
@@ -47,7 +42,7 @@ namespace PokeGame
         // En konstruktor är en metod som returnerar en ny instans av den typ den befinner sig i, returtyp och namn slås ihop.
         public Pokemon()
         {
-            
+
         }
 
         // Detta är ytterligare en konstruktor, denna gång med parametrar. En klass kan ha 0 ... n konstruktorer, bara alla har olika signatur.

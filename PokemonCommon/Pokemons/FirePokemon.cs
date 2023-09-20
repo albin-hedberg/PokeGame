@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PokemonCommon.Enums;
 
-namespace PokeGame
+namespace PokemonCommon.Pokemons
 {
-    internal class FirePokemon : Pokemon
+    public class FirePokemon : Pokemon
     {
         public FirePokemon()
         {
@@ -21,7 +17,7 @@ namespace PokeGame
 
         public override void Eat(string food)
         {
-            Console.WriteLine($"{this.Name} burned: {food}");
+            Console.WriteLine($"{Name} burned: {food}");
         }
 
         private void Ember()
