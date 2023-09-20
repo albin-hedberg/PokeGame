@@ -15,6 +15,7 @@ namespace PokeGame
         Water,
         Grass,
         Rock,
-        Psychic
+        Psychic,
+        Dragon
     }
 }

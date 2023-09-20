@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace PokeGame
 {
-    internal class Pokemon
+    // Går inte att instansiera 'abstract'
+    internal abstract class Pokemon
     {
         // Property för health points 
         // Databehållaren "bakom" en property kallas för fält.
@@ -57,11 +58,23 @@ namespace PokeGame
         }
 
         // Detta är en instans-metod. Till skillnad från statiska metoder anropas dessa enbart genom objekt.
-        public void Attack(Pokemon target)
+        // 'virtual' gör det enklare/tydligare att skriva över funktionen
+        // 'abstract' betyder att alla klasser måste implementera funktionen, finns inget bas/grundbetende
+        public virtual void Attack(Pokemon target)
         {
             target.HealthPoints -= 10;
+            //Console.WriteLine(_name + " Attacks " + target.Name + " (-10hp)");
             Console.WriteLine(_name + " Attacks " + target.Name);
         }
 
+        public abstract void Eat(string food);
+
+        public void Faint()
+        {
+            if (_healthPoints <= 0)
+            {
+                Console.WriteLine(_name + " has fainted!");
+            }
+        }
     }
 }
