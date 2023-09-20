@@ -2,8 +2,8 @@
 
 namespace PokemonCommon.Pokemons
 {
-    // Går inte att instansiera 'abstract'
-    public abstract class Pokemon
+    // Går inte att instansiera en 'abstract' class
+    public class Pokemon
     {
         // Property för health points 
         // Databehållaren "bakom" en property kallas för fält.
@@ -62,7 +62,9 @@ namespace PokemonCommon.Pokemons
             Console.WriteLine(_name + " Attacks " + target.Name);
         }
 
-        public abstract void Eat(string food);
+        // 'abstract' metoder får enbart deklareras i abstract classes
+        public void Eat(string food);
+        public void Sleep();
 
         public void Faint()
         {

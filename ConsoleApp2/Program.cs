@@ -6,27 +6,27 @@ using PokemonCommon.Pokemons;
 //Console.WriteLine("-------------------------");
 Trainer ash = new Trainer();
 
-FirePokemon charmeleon = new FirePokemon();
+Pokemon charmeleon = new Pokemon();
 charmeleon.Name = "Charmeleon";
 ash.Catch(charmeleon);
 
-WaterPokemon wartortle = new WaterPokemon();
+Pokemon wartortle = new Pokemon();
 wartortle.Name = "Wartortle";
 ash.Catch(wartortle);
 
-MagmaPokemon magmar = new MagmaPokemon();
+Pokemon magmar = new Pokemon();
 magmar.Name = "Magmar";
 ash.Catch(magmar);
 
-GrassPokemon bulbasaur = new GrassPokemon();
+Pokemon bulbasaur = new Pokemon();
 bulbasaur.Name = "Bulbasaur";
 ash.Catch(bulbasaur);
 
-DragonPokemon dragonite = new DragonPokemon();
+Pokemon dragonite = new Pokemon();
 dragonite.Name = "Dragonite";
 ash.Catch(dragonite);
 
-DragonPokemon charizard = new DragonPokemon();
+Pokemon charizard = new Pokemon();
 charizard.Name = "Charizard";
 charizard.Type = PokeTypes.Fire;
 ash.Catch(charizard);
